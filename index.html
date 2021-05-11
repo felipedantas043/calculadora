@@ -9,17 +9,38 @@
 </head>
 <body>
     <header>
-        Super calculadora js
+        calculadora de médias
     </header>
     <section>
-        <div id="resultado">
-            <input type="text" name="txtResultado" id="txtResultado" disabled>
+        <div class="conteudo">
+            <p style="font-size: 17pt; text-align: center; margin: 20px;">Digite suas notas abaixo</p>
+            <div>
+                <p>
+                    <label for="n1">Primeiro bimestre</label>
+                    <input type="number" name="n1" id="n1" max="10" min="0">
+                </p>
+                <p>
+                    <label for="n2">Segundo bimestre</label>
+                    <input type="number" name="n2" id="n2" max="10" min="0">
+                </p>
+                <p>
+                    <label for="n3">Terceiro bimestre</label>
+                    <input type="number" name="n3" id="n3" max="10" min="0">
+                </p>
+                <p>
+                    <label for="n4">Quarto bimestre</label>
+                    <input type="number" name="n4" id="n4" max="10" min="0">
+                </p>
+                <p id="media">
+                    <label for="media">Qual média você deseja alcançar?</label>
+                    <input type="number" name="media" id="objetivo" max="10" min="0" placeholder="Opicional">
+                </p>
+                
+            </div>
+            <input type="button" value="Calcular" id="btnCalc" onclick="calcular()">
         </div>
-        <div class="botoes">
-            <input type="button" value="7" onclick="n7()" id="n7">  <input type="button" value="8"><input type="button" value="9">
-            <input type="button" value="4">  <input type="button" value="5"><input type="button" value="6">
-            <input type="button" value="1">  <input type="button" value="2"><input type="button" value="3">
-            <input type="button" value="+/-"><input type="button" value="0"><input type="button" value=".">
+        <div id="res">
+            
         </div>
     </section>
     <footer>
