@@ -4,8 +4,46 @@ body{
 
 }
 
-input{
-    width: 50px;
-    height: 50px;
+/* input{
+    width: 100px;
+    height: 100px;
     
+} */
+
+.container{
+    display: grid;
+    width: 400px;
+    margin: 30px auto;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 1px solid black;
+}
+
+.container input{
+    margin: 0px;
+}
+
+input{
+    border: 0px;
+    height: 90px;
+    margin: 0;
+    background-color: white;
+    
+}
+
+.div_display{
+    grid-column: span 4;
+    
+}
+.div_display input{
+        width: 99%;
+        text-align: end;
+        background-color: whitesmoke;
+}
+#num0{
+    grid-column: span 2;
+}
+.primeira_linha{
+    background-color: red;
 }
