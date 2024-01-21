@@ -62,9 +62,13 @@ document.querySelector("#virgula").addEventListener("click", () => {
 document.querySelector("#CA").addEventListener("click", () => {
     display.value = ""
     display.placeholder = "0"
+    tem_virgula = 0
 })
 document.querySelector("#C").addEventListener("click", () => {
     display.value = display.value.substr(0, display.value.length-1)
+    if (display.value.indexOf(",") == -1) {
+        tem_virgula = 0
+    }
 })
 
 function action(n1, n2, operador) {
@@ -134,5 +138,6 @@ document.querySelector("#porcento").addEventListener("click", () =>{
 document.querySelector("#equals").addEventListener("click", ()=> {
     n2 = parseFloat(display.value.replace(",", "."))
     action(n1, n2, operador)
+    
 
 })
