@@ -1,48 +1,42 @@
-let nine = 9
-let eight = 8
-let seven = 7
-let six = 6
-let five = 5
-let four = 4
-let three = 3
-let two = 2 
-let one = 1
-let zero = 0
 let n1, n2, res, operador, valor_display_array
 let tem_virgula = 0
+let n9 = document.querySelector("#num9")
 
 let display = document.querySelector("#display")
 
-document.querySelector("#num9").addEventListener("click", () => {
-    display.value += nine
+n9.addEventListener("click", () => {
+    display.value += 9
+    n9.style.backgroundColor = "whitesmoke"
 })
+n9.addEventListener("mouseout", () =>{n9.style.backgroundColor = "white"})
+
 document.querySelector("#num8").addEventListener("click", () => {
-    display.value += eight
+    display.value += 8
 })
 document.querySelector("#num7").addEventListener("click", () => {
-    display.value += seven
+    display.value += 7
 })
 document.querySelector("#num6").addEventListener("click", () => {
-    display.value += six
+    display.value += 6
 })
 document.querySelector("#num5").addEventListener("click", () => {
-    display.value += five
+    display.value += 5
 })
 document.querySelector("#num4").addEventListener("click", () => {
-    display.value += four
+    display.value += 4
 })
 document.querySelector("#num3").addEventListener("click", () => {
-    display.value += three
+    display.value += 3
 })
 document.querySelector("#num2").addEventListener("click", () => {
-    display.value += two
+    display.value += 2
 })
 document.querySelector("#num1").addEventListener("click", () => {
-    display.value += one
+    display.value += 1
 })
 document.querySelector("#num0").addEventListener("click", () => {
     if (display.value != 0) {
-        display.value += zero
+        display.value += 0
     }
 })
 document.querySelector("#virgula").addEventListener("click", () => {

@@ -17,7 +17,7 @@ body{
     
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    border: 1px solid black;
+    
 }
 
 .container input{
@@ -27,9 +27,9 @@ body{
 input{
     border: 0px;
     height: 90px;
-    margin: 0;
+    padding: 0px;
     background-color: white;
-    
+    border: 1px solid black;
 }
 
 .div_display{
@@ -40,7 +40,8 @@ input{
         width: 99%;
         text-align: end;
         background-color: whitesmoke;
-}
+        
+    }
 #num0{
     grid-column: span 2;
 }
